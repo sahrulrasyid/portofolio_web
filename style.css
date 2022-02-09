@@ -1,0 +1,337 @@
+:root {
+  --mainColor: #717efc;
+  --secondaryColor: #735dc0;
+  --acsentColor: #ffc62e;
+}
+
+body {
+  background-color: var(--mainColor);
+  min-height: 100px;
+  font-family: "ubuntu", sans-serif;
+}
+/* navabr */
+.nav-link.active {
+  color: var(--acsentColor) !important ;
+  font-weight: 700;
+}
+.nav-dark {
+  background-color: var(--secondaryColor) !important;
+  z-index: 10;
+  transition: 0.6s;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333;
+  color: white;
+}
+
+.brand-title {
+  font-size: 1.5rem;
+  margin: 0.5rem;
+}
+
+.navbar-links {
+  height: 100%;
+}
+
+.navbar-links ul {
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-links li {
+  list-style: none;
+  padding-top: 3px;
+}
+
+.navbar-links li a {
+  display: block;
+  text-decoration: none;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+  color: #fff;
+  min-width: 25px;
+  height: 40px;
+  font-weight: 700;
+  font-size: 1.2rem;
+  padding-bottom: 10px;
+}
+
+.toggle-button {
+  position: absolute;
+  top: 0.75rem;
+  right: 1rem;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 21px;
+}
+
+.navbar-toggler-icon .bar {
+  height: 3px;
+  width: 100%;
+  background-color: white;
+  border-radius: 10px;
+}
+/* End Nav */
+
+/* Hero */
+
+.color-acsent {
+  color: var(--acsentColor);
+}
+#hero {
+  color: #fff;
+  min-height: 120vh;
+  padding-top: 20px;
+}
+#hero h1 {
+  font-size: 3rem;
+}
+#hero h2 {
+  font-weight: 300;
+}
+#hero p {
+  font-size: 1.1rem;
+  font-weight: 300;
+}
+
+/* End Hero */
+
+/* CTA */
+.btn-costume1 {
+  background-color: var(--acsentColor);
+  text-align: center;
+  color: #fff;
+  min-width: 150px;
+  height: 45px;
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+.btn-costume1 :hover {
+  box-shadow: 0 0 5px rgba(255, 166, 0, 0.8);
+}
+.cv {
+  color: #fff;
+  cursor: pointer;
+  font-size: 1.1rem;
+}
+.social-icon {
+  padding-top: 50px;
+}
+.social-icon svg {
+  margin-right: 0.7em;
+  margin-bottom: 10px;
+}
+/* end CTA */
+
+/* About */
+
+hr {
+  width: 30%;
+  height: 5px;
+  color: var(--acsentColor);
+  margin: 0 auto;
+  opacity: 100%;
+}
+#about {
+  min-height: 300px;
+  width: 100%;
+  background-color: var(--secondaryColor);
+  color: #fff;
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+/* endAbout/ */
+/* skill */
+#skill {
+  min-height: 600px;
+  width: 100%;
+  color: #fff;
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+#skill img {
+  width: 15%;
+  margin: 10px;
+}
+#skill .card {
+  background-color: #b691ff;
+  height: 500px;
+}
+
+#skill .card:hover {
+  background-color: var(--acsentColor);
+}
+
+.skill-konten {
+  margin-top: 120px;
+}
+/* endskill */
+
+/* Sertifikat */
+
+#sertifikat {
+  margin-top: -250px;
+  padding-top: 270px;
+  padding-bottom: 80px;
+  color: #fff;
+  background-color: var(--secondaryColor);
+}
+
+#sertifikat p,
+a {
+  color: #fff !important;
+  text-decoration: none;
+}
+#sertifikat img {
+  width: 75%;
+  padding: 10px;
+}
+/* end sertifikat */
+
+/* Portofolio */
+
+#portofolio {
+  margin-top: -250px;
+  padding-top: 270px;
+  padding-bottom: 80px;
+  color: #fff;
+}
+
+#portofolio p,
+a {
+  color: #fff !important;
+  text-decoration: none;
+}
+#portofolio img {
+  width: 75%;
+  padding: 10px;
+}
+
+/* End Portofolio */
+
+/* footer */
+
+.social-icon-footer {
+  margin-right: 0.7rem;
+  margin-bottom: 10px;
+}
+
+/* end footer */
+
+/* responsive */
+
+@media screen and (max-width: 1200px) {
+  #hero p {
+    font-size: 0.9rem;
+  }
+  #hero h1 {
+    font-size: 2.3rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .toggle-button {
+    display: flex;
+  }
+
+  .navbar-links {
+    display: none;
+    width: 100%;
+  }
+
+  .navbar-links ul {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .navbar-links ul li {
+    text-align: center;
+  }
+
+  .navbar-links ul li a {
+    padding: 0.5rem 1rem;
+  }
+
+  .navbar-links.active {
+    display: flex;
+  }
+  #hero img {
+    width: 45%;
+  }
+
+  #hero .row {
+    padding-bottom: 70px;
+  }
+  .btn-costume1 {
+    width: 80%;
+  }
+  .social-icon {
+    left: 50%;
+    transform: translate(-50%);
+  }
+
+  #about p.yel {
+    text-align: justify !important;
+  }
+  #skill .card h3 {
+    font-size: 1.3rem;
+  }
+  #skill p {
+    text-align: justify !important;
+  }
+  #skill .card {
+    padding-left: 30px !important;
+    padding-right: 30px !important;
+    margin-top: 20px;
+  }
+  #portofolio .col-md-12 {
+    flex-direction: column;
+  }
+  hr {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .toggle-button {
+    display: flex;
+  }
+
+  .navbar-links {
+    display: none;
+  }
+
+  .navbar-link.active {
+    display: flex;
+  }
+
+  #hero img {
+    width: 40%;
+  }
+
+  .btn-costume1 {
+    width: 60%;
+  }
+  #skill p {
+    text-align: justify !important;
+  }
+  hr {
+    width: 75%;
+  }
+  #portofolio .col-md-12 {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  #portofolio .col-md-12 {
+    flex-direction: column;
+  }
+}
